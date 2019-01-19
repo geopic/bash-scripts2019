@@ -1,9 +1,9 @@
 #!/bin/bash -e
 # Application generator script.
-read -p 'Name of directory: ' projectdir
-git clone --depth=1 https://github.com/tedjenkins/generator.git "$projectdir"
+read -p 'Name of project: ' project
+git clone --depth=1 https://github.com/tedjenkins/generator.git "$project"
 
-cd "$projectdir"
+cd "$project"
 echo "Removing and re-initialising git repository..."
 rm -rf .git
 
