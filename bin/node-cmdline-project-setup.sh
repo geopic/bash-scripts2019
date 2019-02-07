@@ -4,7 +4,7 @@ if ! [ -x "$(command -v node)" ]
   then echo "ERROR: Node does not exist or cannot be recognised on this machine.";
 else
   read -p 'Name of project: ' project;
-  git clone --depth=1 https://github.com/tedjenkins/node-cmdline-project-generator.git "$project";
+  git clone --depth=1 git@github.com:tedjenkins/node-cmdline-project-generator.git "$project";
 
   cd "$project";
   echo "Removing and re-initialising git repository...";
