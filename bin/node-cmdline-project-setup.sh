@@ -11,8 +11,6 @@ else
   rm -rf .git;
 
   git init;
-  git config --local user.name "George Pickering";
-  git config --local user.email 29524044+tedjenkins@users.noreply.github.com;
 
   echo "Done! You are now in project directory, remember to npm install!";
 fi
